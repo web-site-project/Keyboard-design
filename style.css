@@ -1,0 +1,94 @@
+input {
+    display: block;
+    width: 500px;
+    height: 50px;
+    margin: auto;
+    outline: none;
+}
+
+.search-input {
+    margin: 40px auto;
+    text-indent: 5px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.keyboard {
+    display: block;
+    margin: auto;
+    width: 900px;
+    height: auto;
+    background-color: #13181a;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.buttons {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.buttons .line {
+    display: inherit;
+    gap: inherit;
+    border-radius: 7px;
+}
+
+.buttons .line button {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+    box-shadow: 3px 3px 3px #71D4FE,
+        -3px -3px 3px #141be8;
+    color: #71D4FE;
+    background-color: transparent;
+    margin: 3px;
+    border-radius: 7px;
+    position: relative;
+    font-weight: bold;
+}
+
+.buttons .line button:active,
+.buttons .line .click {
+    box-shadow: 0px 3px 3px rgb(76, 0, 254);
+}
+
+.buttons .line button[value="space"] {
+    width: 220px;
+    display: inline-block;
+    position: relative;
+    top: 6px;
+}
+
+
+.BACK,
+.CAPS,
+.ENTER,
+.SHIFT,
+.TAB,
+.ESC {
+    text-transform: uppercase !important;
+}
+
+.BACK {
+    width: 75px !important;
+}
+
+.TAB,
+.CAPS {
+    width: 75px !important;
+}
+
+.ENTER {
+    width: 92px !important;
+}
+
+.SHIFT {
+    width: 125px !important;
+}
+
+.active {
+    background-color: #141be8 !important;
+}
